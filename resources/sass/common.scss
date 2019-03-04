@@ -79,6 +79,10 @@
   padding: 15px 30px;
   border: 3px solid green;
   border-radius: 4px;
+  &.submit {
+    padding:5px 80px;
+    border: 0;
+  }
 }
 
 .btn_orange {

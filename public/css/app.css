@@ -16432,6 +16432,11 @@ a:hover {
   border-radius: 4px;
 }
 
+.btn_boolean.submit {
+  padding: 5px 80px;
+  border: 0;
+}
+
 .btn_orange {
   padding: 15px 30px;
   color: white;
@@ -16506,5 +16511,12 @@ nav.navbar .navbar-collapse .btn_orange {
 .footer_bottom .col-lg-6 p {
   font-size: 0.8rem;
   line-height: 40px;
+}
+
+.start_here h3,
+.start_here p,
+.start_here ul,
+.start_here li {
+  color: white;
 }
 
