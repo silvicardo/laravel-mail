@@ -31,7 +31,7 @@ class AdmissionController extends Controller
       //se non si vuole usare lo slash iniziale
       //use Illuminate\Support\Facades\Mail
       //to(indirizzo destinatario)
-      \Mail::to('test@gmail.com')->send(new SendNewLead());
+      \Mail::to('test@gmail.com')->send(new SendNewLead($newLead));
 
       return view('admission.index', compact('alertClass', 'feedbackMessage'));
     }
