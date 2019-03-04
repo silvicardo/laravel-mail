@@ -22,6 +22,8 @@
 
         <div id="page_content">
 
+          @yield('feedback_area')
+
           @yield('content')
 
           @include('includes.footer')

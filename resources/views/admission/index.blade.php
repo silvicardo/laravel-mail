@@ -2,6 +2,17 @@
 
 @section('title');
 
+@section('feedback_area')
+  @if(!empty($feedbackMessage))
+    <section class="feedback container py-3">
+      <div class="alert alert-{{$alertClass}}" role="alert">
+        {{ $feedbackMessage }}
+      </div>
+    </section>
+  @endif
+
+@endsection
+
 @section('content')
 
     <section class="one_step_away container text-center py-5">
