@@ -27,26 +27,31 @@
             </div>
             <ul class="steps list-unstyled">
               <li>Contattaci</li>
+              <li class="pl-4"><i class="fas fa-long-arrow-alt-down text-white"></i></li>
               <li>Visita al campus virtuale</li>
+              <li class="pl-4"><i class="fas fa-long-arrow-alt-down text-white"></i></li>
               <li>Test d'ingresso</li>
+              <li class="pl-4"><i class="fas fa-long-arrow-alt-down text-white"></i></li>
               <li>Iscrizione</li>
             </ul>
           </div>
           <div class="request_form col-md-6">
-            <form action="" class="py-5">
+            <form action="{{ route('admission.save')}}" class="py-5" method="post">
+              @csrf
+              @method('POST')
               <div class="form-row">
                <div class="form-group col-md-6">
-                 <input type="text" class="form-control" placeholder="Nome*">
+                 <input type="text" class="form-control" name="username" placeholder="Nome*">
                </div>
                <div class="form-group col-md-6">
-                 <input type="email" class="form-control" placeholder="Email*">
+                 <input type="email" class="form-control" name="email" placeholder="Email*">
                </div>
              </div>
              <div class="form-group">
-                <textarea class="form-control" rows="6" placeholder="Messaggio..."></textarea>
+                <textarea class="form-control" rows="6" name="message" placeholder="Messaggio..."></textarea>
               </div>
               <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="privacyCheck">
+                <input type="checkbox" class="form-check-input" name="privacy" id="privacyCheck">
                 <label class="form-check-label text-white" for="privacyCheck">Accetto la Privacy Policy</label>
               </div>
               <button type="submit" class="btn_boolean submit btn_orange">Invia</button>

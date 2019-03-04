@@ -14,3 +14,5 @@
 Route::get('/', 'HomeController@index')->name('home.index');
 
 Route::get('/iscriviti', 'AdmissionController@index')->name('admission.index');
+
+Route::post('/iscriviti', 'AdmissionController@save')->name('admission.save');
