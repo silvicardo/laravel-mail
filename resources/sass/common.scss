@@ -1,0 +1,106 @@
+/*REGOLE PRINCIPALI*/
+
+ 	* {
+ 	margin: 0;
+ 	padding:0;
+ 	box-sizing: border-box;
+ 	font-size: $defaultRemFontSize;
+  font-family: $font-family-sans-serif;
+  color: $booleanBlue;
+ }
+
+ a, a:hover {
+   text-decoration:none;
+   color: $booleanBlue;
+   cursor: pointer;
+ }
+
+
+ /*REGOLE PRINCIPALI ---> fontSize Media Queries*/
+
+ @media all and (max-width: 1149px) {
+
+ 	* {
+ 		font-size: $tabletRemFontSize;
+ 	}
+
+ }
+
+ @media all and (max-width: 768px) {
+
+  * {
+	 font-size: $mobileRemFontSize;
+  }
+
+}
+
+/*REGOLE PRINCIPALI ---> containers*/
+
+ #main_container {
+ 	max-width: 100vw;
+  height: auto;
+}
+
+#page_content {
+  margin-top: $pageContainerTopMargin;
+}
+
+.position-absolute.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*REGOLE PRINCIPALI ---> sfondo containers*/
+
+.bg_boolean_grey {
+ background-color: $booleanGrey;
+}
+
+.bg_boolean_blue {
+  background-color: $booleanBlue;
+}
+
+.color_boolean_grey {
+ color: $booleanGrey;
+}
+
+.color_boolean_blue {
+  color: $booleanBlue;
+}
+
+.color_boolean_orange {
+  color: $booleanOrange;
+}
+
+/*REGOLE PRINCIPALI ---> componenti*/
+
+.btn_boolean {
+  padding: 15px 30px;
+  border: 3px solid green;
+  border-radius: 4px;
+}
+
+.btn_orange {
+  padding: 15px 30px;
+  color: white;
+  font-size: $biggerFontSize;
+  background: $booleanOrange;
+  border-radius: 4px;
+  transition: 0.2s background;
+  &:hover {
+    color: white;
+    background: lighten($booleanOrange, 10%);
+  }
+}
+
+.feature {
+  h1,h2,h3,h4, h5, h6, img, p {
+    margin-bottom: 3rem;
+  }
+  &.smaller_margin {
+    h1,h2,h3,h4, h5, h6, img, p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

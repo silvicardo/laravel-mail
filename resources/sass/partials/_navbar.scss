@@ -1,0 +1,32 @@
+nav.navbar {
+  z-index: $zindex-fixed;
+  .navbar-brand img {
+    max-width: 160px;
+
+  }
+  .navbar-collapse {
+      .nav-link, .dropdown-item {
+        margin: 0px 40px;
+        color: $booleanBlue;
+        text-transform: uppercase;
+      }
+      .btn_orange {
+        padding: 8px 20px;
+        font-size: $smallerFontSize;
+      }
+    }
+  }
+
+  @media all and (min-width: 993px) {
+    nav.navbar {
+      .navbar-collapse {
+          .nav-link {
+            margin-left: 0;
+            &:hover {
+              border-bottom: 2px solid $booleanGreen;
+              border-radius: 1px;
+            }
+          }
+        }
+      }
+  }

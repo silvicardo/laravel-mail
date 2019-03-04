@@ -1,11 +1,29 @@
-
 // Body
 $body-bg: #f8fafc;
 
+//container
+$defaultPadding: 25px;
+$pageContainerTopMargin: 70px;
+
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+
+$defaultRemFontSize: 16px;
+$tabletRemFontSize: 14px;
+$mobileRemFontSize: 14px;
+
+$regularFontSize: 1rem;
+$smallerFontSize: 0.8rem;
+$extraSmallFontSize: 0.6rem;
+$biggerFontSize: 1.3rem;
+$xlFontSize: 1.6rem;
+$doubleRemFontSize: 2rem;
+$TripleRemFontSize: 3rem;
+$QuadrupleRemFontSize: 4rem;
+$QuintupleRemFontSize: 5rem;
+
+$bolderFont: 600;
+$boldestFont: 800;
 
 // Colors
 $blue: #3490dc;
@@ -18,3 +36,8 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+$booleanGrey: #E8EBF1;
+$booleanBlue: #1B3C59;
+$booleanGreen: #61ce4e;
+$booleanOrange: #fd8d53;
