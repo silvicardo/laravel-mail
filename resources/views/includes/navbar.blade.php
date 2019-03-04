@@ -14,6 +14,6 @@
       </li>
     @endforeach
     </ul>
-    {{-- <a class="btn_orange text-capitalize" href="{{route('home.iscriviti')}}">iscriviti</a> --}}
+    <a class="btn_orange text-capitalize" href="{{route('admission.index')}}">iscriviti</a>
   </div>
 </nav>
